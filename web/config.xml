@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<widget
+    xmlns="http://www.w3.org/ns/widgets"
+    xmlns:gap="http://phonegap.com/ns/1.0"
+    id="co.com.cmi"
+    versionCode="100"
+    version="0.1.0.0">
+   
+    <name>Centro Medico Imbanaco</name>
+
+    <description>
+        Registro demograficos del paciente
+     </description>
+
+    <author href="http://www.imbanaco.com/">
+        Juan Guillermo Gómez
+    </author>
+
+    <preference name="phonegap-version" value="3.1.0" />
+    <preference name="orientation" value="portrait" />
+    <preference name="target-device" value="handset" />
+    <preference name="auto-hide-splash-screen" value="false" />
+    <preference name="permissions" value="none"/>
+
+    <!-- Android icons -->
+    <icon src="Resources/icons/android/36x36.png"  gap:platform="android" gap:density="ldpi" />
+    <icon src="Resources/icons/android/48x48.png"  gap:platform="android" gap:density="mdpi" />
+    <icon src="Resources/icons/android/72x72.png"  gap:platform="android" gap:density="hdpi" />
+    <icon src="Resources/icons/android/96x96.png"  gap:platform="android" gap:density="xhdpi" />    
+
+    <!-- Android splashes -->
+    <gap:splash src="Resources/splash/android/200x320.png"  gap:platform="android" gap:density="ldpi" />
+    <gap:splash src="Resources/splash/android/320x480.png"  gap:platform="android" gap:density="mdpi" />
+    <gap:splash src="Resources/splash/android/480x800.png"  gap:platform="android" gap:density="hdpi" />
+    <gap:splash src="Resources/splash/android/720X1280.png" gap:platform="android" gap:density="xhdpi" />
+    
+</widget>

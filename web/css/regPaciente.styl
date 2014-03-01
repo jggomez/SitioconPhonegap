@@ -1,0 +1,178 @@
+azulOscuro = #2356BB
+azulClaro= #4398BD
+gristexto = #7A7A7A
+azul = #22BCE0
+
+
+a
+	color gristexto
+
+body
+	background #e8e8e8
+	color black
+	font-family arial
+	font-size 16px
+	transition font-size 1s	
+
+footer
+	background azulOscuro
+	color rgba(white, .5)
+	padding 1em 0
+	text-align center
+	width 100%
+
+
+	h3
+		color white
+		font-size 14px
+		font-weight normal
+
+		strong
+			display block
+
+		.creditos
+			&:after
+			&:before
+				content " - "
+
+header
+	background azulOscuro
+	color white
+	padding 0.8em
+
+	.logoSIAM
+		border-right 1px solid white
+		float left
+		width 180px
+
+		img			
+			border-radius 10%
+			width 120px
+			height 55px	
+			margin-top 0.5em
+			margin-left 1.5em
+
+	.registroPaciente		
+		text-align center
+		font-style italic		
+
+nav
+	background azulClaro
+	border-left 10px solid white	
+
+	&:before
+		border-bottom 20px solid transparent
+		border-left 7px solid white
+		border-top 20px solid transparent
+		content ""
+		left 0px
+		position absolute
+		top 0px
+
+	.menu
+		height 40px
+		line-height 40px
+		margin 0
+		overflow-x auto
+		padding 0		
+		white-space nowrap
+
+		&::-webkit-scrollbar
+			display none
+
+		li
+			display inline-block
+
+			a
+				color white
+				display block
+				margin 0 0.5em
+				padding 0 0.2em
+				text-decoration none
+
+				&:hover
+					background rgba(black, 0.1)
+
+section	
+	padding 0.8em 
+
+	.formulario
+		background white
+		box-shadow 2px 2px 10px rgba(black, 0.5)
+		border-radius 0 0 0.5em 0.5em
+		color gristexto
+		margin-bottom 0.5em		
+		padding 0.8em
+		align center		
+
+		.campoEntrada
+			width 400px
+			horizontal-align right
+
+		.datosPaciente
+			align center
+
+		.eventos
+			border-top 3px solid azulClaro			
+			padding 0.5em		
+			
+			input	
+				width 100px							
+
+		.imgFotoPaciente
+			float left						
+			margin-top 50px						
+
+			img
+				padding 0.5em
+				vertical-align top
+				horizontal-align center
+				height 170px
+				width 150px				
+
+		label
+			display inline-block
+			width 200px				
+
+			
+@media screen and (max-width: 768px)
+
+	header
+		padding 0.3em
+		
+		.logoSIAM			
+			width 125px
+
+			img					
+				border-radius 10%
+				height 50px	
+				margin-top 1em
+				margin-left 1em
+				width 100px	
+
+		.registroPaciente		
+			font-size 15px
+	
+	section
+		
+		.formulario				
+			padding 1em				
+
+			.campoEntrada
+				width 100%
+				horizontal-align right
+
+			.datosPaciente
+				.titulo
+					font-size 16px
+					clear left
+
+			.imgFotoPaciente				
+				position left
+				margin-top 0
+				margin-left 4em
+				left 0em
+				top 0em				
+
+			.label 				
+				font-size 15px				

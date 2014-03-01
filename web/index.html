@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Registro Demograficos del Pacientes</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+		<link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" href="css/regPaciente.css">
+
+		<link rel="stylesheet" href="css/demo.css">
+		<link rel="stylesheet" href="css/pushy.css">
+		
+		<script src="js/jquery-2.1.0.min.js"></script>
+    	<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.1.min.js"><\/script>')</script>
+		<script src="js/vendor/modernizr-2.6.2.min.js"></script>		
+		<script src="js/pushy.min.js"></script>		
+	</head>
+	<body>
+		<header>
+			<!-- Menu Button -->            
+			<div class="logoSIAM">				
+				<img class="menu-btn" src="imagenes/cmi.jpg" alt="Centro Medico Imbanaco">
+			</div>
+			<div class="registroPaciente">
+				<h3 class="tituloPpal">Datos Demograficos del Paciente</h3>
+			</div>
+		</header>
+
+		<nav>
+			<ul class="menu">
+				<li><a href="#">Registro Paciente</a></li>
+				<li><a href="#">Historia Clinica</a></li>
+				<li><a href="#">Facturación</a></li>
+				<li><a href="#">Cirugia</a></li>
+			</ul>			
+		</nav>
+
+		<nav class="pushy pushy-left">
+			<ul>
+				<li><a href="#">Registro Paciente</a></li>
+				<li><a href="#">Historia Clinica</a></li>
+				<li><a href="#">Facturación</a></li>
+				<li><a href="#">Cirugia</a></li>
+			</ul>			
+		</nav
+
+		<!-- Site Overlay -->
+        <div class="site-overlay"></div>
+		<section>
+			<form action="">
+				<div class="formulario">					
+					<div class="datosPaciente">
+						<div class="imgFotoPaciente">
+							<figure class="fotoPaciente">
+								<img src="imagenes/paciente.jpg">
+							</figure>
+						</div>
+						<p>
+							<h2 class="titulo">Datos Demograficos del Paciente</h2>
+						</p>
+						<p>
+							<label for="inNombrePaciente" class="label">Nombres del Paciente:</label>
+							<input type="text" class="campoEntrada" name="inNombrePaciente" id="inNombrePaciente" placeholder="Ingrese Nombre Paciente" required="required" >
+						</p>
+						<p>
+							<label for="inApellidoPaciente" class="label">Apellidos del Paciente:</label>
+							<input type="text" class="campoEntrada" name="inApellidoPaciente" id="inApellidoPaciente" placeholder="Ingrese Apellido Paciente" required="required" >
+						</p>
+						<p>
+							<label for="inNumeroDocumento" class="label">Documento del Paciente:</label>
+							<input type="text" class="campoEntrada" name="inNumeroDocumento" id="inNumeroDocumento" placeholder="Ingrese Documento Paciente" required="required" >
+						</p>
+						<p>
+							<label for="inNumeroCelular" class="label">Num. Celular del Paciente:</label>
+							<input type="text" class="campoEntrada" name="inNumeroCelular" id="inNumeroCelular" placeholder="Ingrese Num. Celular del Paciente" required="required" >
+						</p>
+						<p>
+							<label for="inDireccion" class="label">Dirección del Paciente:</label>
+							<input type="text" class="campoEntrada" name="inDireccion" id="inDireccion" placeholder="Ingrese Dirección del Paciente" required="required" >
+						</p>
+						<div class="eventos">
+							<div class="boton">
+								<input type="submit" value="Registrar" id="btnRegistrar">
+								<input type="submit" value="Add Foto" id="btnAddFoto" formnovalidate>
+							</div>							
+						</div>
+						</p>
+					</div>
+				</div>
+			</form>
+		</section>
+
+		<footer>
+			<h3>
+				<strong>Powered by Juan Guillermo Gómez</strong>				
+				<span class="creditos">Centro Medico Imbanaco</span>
+			</h3>
+		</footer>	
+
+		<script>
+
+		$(function(){
+
+			$('#btnRegistrar').on('click', function(even){				 			
+					alert('Registrado');					
+
+			})
+
+			var click = 1;
+
+			$('#btnAddFoto').on('click', function(even){
+					
+					if (click) {						
+						$(".imgFotoPaciente").slideToggle();						
+						$(".datosPaciente").css({margin: "0 0 0 0" });	
+						click = 0;
+					}
+					else{												
+						$(".imgFotoPaciente").slideToggle();
+						click = 1;	
+					}
+
+					
+					even.preventDefault();
+
+			})
+
+		});
+
+
+		</script>
+	
+	</body>
+</html>
